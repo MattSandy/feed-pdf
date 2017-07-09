@@ -1,11 +1,12 @@
 body {
     padding: 50px;
-    font: 11pt "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
     max-width: 900px;
+    width:94%;
     margin: auto;
 }
 p {
-    font: 11pt "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 a {
     color: #00B7FF;
