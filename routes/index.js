@@ -67,7 +67,7 @@ function render_content(res, url, first_attempt) {
         //   * "content"   - The HTML content of the article (String).
         //
         if(typeof articles !== "undefined") {
-            articles = articles.slice(0, 2);
+            //articles = articles.slice(0, 2);
             articles.forEach(function (article) {
                 console.log(article);
                 readable(article.link, function (err, article, meta) {
