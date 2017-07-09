@@ -1,2 +1,8 @@
 ./node_modules
 /node_modules
+/.idea
+/.idea/feed-pdf.iml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/watcherTasks.xml
+/.idea/workspace.xml
