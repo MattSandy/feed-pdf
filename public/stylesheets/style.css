@@ -1,9 +1,11 @@
 body {
-    padding: 50px;
     font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
-    max-width: 900px;
-    width:94%;
     margin: auto;
+}
+article {
+    max-width:900px;
+    width:90%;
+    margin:auto;
 }
 p {
     font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
