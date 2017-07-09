@@ -6,21 +6,21 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "async": "^2.5.0",
     "body-parser": "~1.16.0",
+    "cheerio": "*",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "express": "~4.14.1",
-    "feed-finder": "^0.2.0",
-    "jade": "~1.11.0",
-    "morgan": "~1.7.0",
     "feed-finder": "*",
     "feed-read": "*",
+    "fs": "*",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
     "node-readability": "*",
-    "request": "*",
-    "cheerio": "*",
     "phantom-html-to-pdf": "*",
     "phantomjs-prebuilt": "*",
-    "fs": "*",
+    "request": "*",
     "serve-favicon": "~2.3.2"
   }
 }

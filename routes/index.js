@@ -4,6 +4,7 @@ var feedFinder = require('feed-finder');
 var feedRead = require('feed-read');
 var readable = require('node-readability');
 var request = require('request');
+var async = require('async');
 const cheerio = require('cheerio');
 
 
@@ -68,7 +69,7 @@ function render_content(res, url, first_attempt) {
         //
         if(typeof articles !== "undefined") {
             //articles = articles.slice(0, 2);
-            articles.forEach(function (article) {
+            async.each(articles, function (article) {
                 console.log(article);
                 readable(article.link, function (err, article, meta) {
                     try {
