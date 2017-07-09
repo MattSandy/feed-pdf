@@ -4,9 +4,7 @@ var request = require('request');
 //var pdf = require('html-pdf');
 var fs = require('fs');
 //var phantom = require('phantom');
-var conversion = require("phantom-html-to-pdf")({
-    phantomPath: require("phantomjs-prebuilt").path
-});
+var conversion = require("phantom-html-to-pdf");
 
 /* GET users listing. */
 router.get('/:domain', function (req, res, next) {
