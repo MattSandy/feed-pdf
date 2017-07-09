@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  article
+      for article in articles
+        h1= article.title
+        div !{article.content}
