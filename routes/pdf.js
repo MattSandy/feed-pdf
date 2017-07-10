@@ -27,6 +27,7 @@ router.get('/:domain', function (req, res, next) {
             }, function (err, pdf) {
                 console.log(pdf.logs);
                 console.log(pdf.numberOfPages);
+                res.attachment(req.params.domain + '.pdf');
                 pdf.stream.pipe(res);
             });
     });
