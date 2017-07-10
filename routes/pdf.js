@@ -18,7 +18,11 @@ router.get('/:domain', function (req, res, next) {
                 waitForJS: false,
                 viewportSize: {
                     width: 1024,
-                    height: 768
+                    height: 1320
+                },
+                paperSize:  {
+                    width: '8.5in',
+                    height: '11in'
                 }
             }, function (err, pdf) {
                 console.log(pdf.logs);

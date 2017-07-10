@@ -85,8 +85,12 @@ function render_content(res, url, first_attempt) {
 
                         // Response Object from Request Lib
                         //console.log(meta);
-
-                        buffer.push({title: page.title, content: page.content, url: article.link });
+                        var $ = cheerio.load(page.content);
+                        $('img').each(function(i, elem) {
+                            $(this).attr("width","100%");
+                            $(this).attr("height","");
+                        });
+                        buffer.push({title: page.title, content: $.html(), url: article.link });
                         // Close article to clean up jsdom and prevent leaks
                         page.close();
                     } catch (err) {
