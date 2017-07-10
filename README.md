@@ -14,3 +14,5 @@ Creates a PDF of the First Found RSS Feed
 npm install
 npm start
 ```
+# Samples
+* [newyorktimes.com.pdf](samples/newyorktimes.com.pdf)
