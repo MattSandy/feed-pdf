@@ -70,7 +70,7 @@ function render_content(res, url, first_attempt) {
         if(typeof articles !== "undefined") {
             //articles = articles.slice(0, 2);
             async.each(articles, function (article) {
-                console.log(article);
+                //console.log(article);
                 readable(article.link, function (err, page, meta) {
                     try {
                         // Main Article

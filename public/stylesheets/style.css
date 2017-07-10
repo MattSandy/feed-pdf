@@ -8,7 +8,7 @@ article {
     margin:auto;
 }
 p {
-    font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif !important;
 }
 a {
     color: #00B7FF;

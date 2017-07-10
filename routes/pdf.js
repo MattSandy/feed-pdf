@@ -14,18 +14,19 @@ router.get('/:domain', function (req, res, next) {
         conversion(
             {
                 html: body,
-                fitToPage: true,
+                fitToPage: false,
                 waitForJS: false,
                 viewportSize: {
-                    width: 1024,
-                    height: 1320
+                    width: 1024*2,
+                    height: 1320*2
                 },
                 paperSize:  {
                     width: '8.5in',
                     height: '11in'
-                }
+                },
+                css: 'http://' + req.get('host') + '/stylesheets/phantom.css'
             }, function (err, pdf) {
-                console.log(pdf.logs);
+                //console.log(pdf.logs);
                 console.log(pdf.numberOfPages);
                 res.attachment(req.params.domain + '.pdf');
                 pdf.stream.pipe(res);
