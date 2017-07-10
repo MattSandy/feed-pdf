@@ -21,3 +21,7 @@ img {
 h1 {
     font-size:24pt;
 }
+h1 a {
+    color: black;
+    text-decoration: none;
+}

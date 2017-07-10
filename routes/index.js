@@ -71,7 +71,7 @@ function render_content(res, url, first_attempt) {
             //articles = articles.slice(0, 2);
             async.each(articles, function (article) {
                 console.log(article);
-                readable(article.link, function (err, article, meta) {
+                readable(article.link, function (err, page, meta) {
                     try {
                         // Main Article
                         //console.log(article.content);
@@ -86,9 +86,9 @@ function render_content(res, url, first_attempt) {
                         // Response Object from Request Lib
                         //console.log(meta);
 
-                        buffer.push({title: article.title, content: article.content});
+                        buffer.push({title: page.title, content: page.content, url: article.link });
                         // Close article to clean up jsdom and prevent leaks
-                        article.close();
+                        page.close();
                     } catch (err) {
                         console.log(err);
                     }
