@@ -20,7 +20,7 @@
     "feed-read": "*",
     "fs": "*",
     "jade": "~1.11.0",
-    "morgan": "~1.7.0",
+    "morgan": "~1.9.1",
     "node-readability": "*",
     "phantom-html-to-pdf": "*",
     "phantomjs-prebuilt": "*",
