@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": "6.9.4",
@@ -25,6 +27,8 @@
     "phantom-html-to-pdf": "0.6.1",
     "phantomjs-prebuilt": "*",
     "request": "*",
-    "serve-favicon": "~2.3.2"
-  }
+    "serve-favicon": "~2.3.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
