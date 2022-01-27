@@ -1,0 +1,40 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - phantom-html-to-pdf > phantomjs > request > hawk > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantomjs > request > hawk > boom > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantomjs > request > hawk > sntp > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantom-workers > phantomjs > request > hawk > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantom-workers > phantomjs > request > hawk > boom > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantom-workers > phantomjs > request > hawk > sntp > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantom-workers > phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-01-27T16:13:52.004Z'
+  SNYK-JS-LODASH-567746:
+    - phantom-html-to-pdf > lodash:
+        patched: '2022-01-27T16:13:52.004Z'
+  'npm:request:20160119':
+    - phantom-html-to-pdf > phantomjs > request:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantom-workers > phantomjs > request:
+        patched: '2022-01-27T16:13:52.004Z'
+  'npm:tough-cookie:20170905':
+    - phantom-html-to-pdf > phantomjs > request > tough-cookie:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantom-workers > phantomjs > request > tough-cookie:
+        patched: '2022-01-27T16:13:52.004Z'
+  'npm:tunnel-agent:20170305':
+    - phantom-html-to-pdf > phantomjs > request > tunnel-agent:
+        patched: '2022-01-27T16:13:52.004Z'
+    - phantom-html-to-pdf > phantom-workers > phantomjs > request > tunnel-agent:
+        patched: '2022-01-27T16:13:52.004Z'
