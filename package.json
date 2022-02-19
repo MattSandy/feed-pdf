@@ -28,7 +28,7 @@
     "phantomjs-prebuilt": "*",
     "request": "*",
     "serve-favicon": "~2.3.2",
-    "@snyk/protect": "latest"
+    "@snyk/protect": "1.840.0"
   },
   "snyk": true
 }
