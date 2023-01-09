@@ -16,7 +16,7 @@
     "body-parser": "~1.16.0",
     "cheerio": "*",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
+    "debug": "~3.1.0",
     "express": "~4.14.1",
     "feed-finder": "*",
     "feed-read": "*",
